@@ -9,7 +9,7 @@ all: main
 main: main.o
 	c++ -std=c++11 $(CXXFLAGS) $@.o -o $@
 
-main.o: main.cpp Duck.h DuckTraits.h DuckOps.h
+main.o: main.cpp Duck.h
 
 .SUFFIXES: .cpp .o
 .cpp.o:

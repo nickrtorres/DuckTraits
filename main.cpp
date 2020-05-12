@@ -1,6 +1,5 @@
 /* vim: tw=80:noet:sw=8:ts=8:sts=-1 */
 #include "Duck.h"
-#include "DuckOps.h"
 
 int main()
 {
