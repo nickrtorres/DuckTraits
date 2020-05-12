@@ -16,6 +16,6 @@ struct RoboDuck
 	void Quack() const { std::cout << "Robotic quack" << std::endl; }
 };
 
-struct NotDuck;
+struct NotDuck {};
 
 #endif /* DUCK_H_ */
