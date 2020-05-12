@@ -7,13 +7,13 @@
 namespace DuckOps
 {
 template <typename T>
-void DoQuack(T &t, typename std::enable_if<DuckTraits::Quacks<T>::value>::type* = nullptr)
+void DoQuack(const T &t, typename std::enable_if<DuckTraits::Quacks<T>::value>::type* = nullptr)
 {
 	t.Quack();
 }
 
 template <typename T>
-void DoQuack(T &t, typename std::enable_if<DuckTraits::DoesntQuack<T>::value>::type* = nullptr)
+void DoQuack(const T &t, typename std::enable_if<DuckTraits::DoesntQuack<T>::value>::type* = nullptr)
 {
 	static_assert(DuckTraits::Quacks<T>::value, "Must be able to quack!");
 }
