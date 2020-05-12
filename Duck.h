@@ -3,6 +3,7 @@
 #define DUCK_H_
 
 #include <iostream>
+#include <type_traits>
 
 struct Duck
 {
