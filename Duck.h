@@ -40,7 +40,7 @@ DoQuack(const T &t)
 
 template <typename T>
 typename std::enable_if<!DuckTraits::Quacks<T>::value>::type
-DoQuack(const T &t)
+DoQuack(const T &)
 {
 	static_assert(DuckTraits::Quacks<T>::value, "Must be able to quack!");
 }
